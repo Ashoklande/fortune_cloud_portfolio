@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute _ wala task.</title>
+    <style>
+        .container{
+            height:40%;
+            width: 40%;
+            position: relative;
+        }
+        .container img{
+            width:600px ;
+        }
+         .top-div{
+            height: 600px;;
+            width: 600px;
+            background-color: aqua;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            
+         }
+         .container:hover .top-div{
+            opacity: 1.0;
+            
+         }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div class="top-div">
+                <h1>HII ! Hello How are You ?</h1>
+            </div>
+        </div>
+    </body>
+</html>

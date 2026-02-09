@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gradient combination</title>
+    <style>
+      div {
+        height: 300px;
+        width: 300px;
+        /* background-image: linear-gradient( to bottom,pink,green); */
+        /* background-image:radial-gradient(red,yellow); */
+        /* background-image: conic-gradient(red,yellow); */
+
+        /* cirle by using conic-gradient */
+        border-radius: 400px;
+        background-image: conic-gradient(
+          red 0deg 120deg,
+          blue 120deg 200deg,
+          green 120deg 250deg,
+          pink 250deg 360deg
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

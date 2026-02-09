@@ -1,0 +1,13 @@
+section  {
+    height: 80vh;
+    width: 100%;
+    background: url("https://static.vecteezy.com/system/resources/previews/050/819/242/large_2x/romantic-blooms-red-rose-background-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+marquee{
+    color: black;
+    font-size: xx-large;
+    align-items: center;
+    font-weight: 900;
+}

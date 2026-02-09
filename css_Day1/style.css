@@ -1,0 +1,31 @@
+/* element selector */
+
+h1{
+    color: black ;
+}
+
+/* Id selector */
+
+#Ashoka{
+    color:red;
+}
+
+/* class selector */
+.he12{
+    color: blue;
+}
+
+/* grouping selector */
+#Ashoka,.he12,h1{
+    font-style: oblique;
+}
+
+
+/* Universal selector */
+*{
+    background-color: darkgray;
+}
+
+
+
+

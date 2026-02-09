@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation in css</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            animation: Ashokanimation 5s infinite;
+            position: relative;
+        }
+
+        @keyframes Ashokanimation {
+            0%{top: 0; left: 0; background-color: aqua;}
+            25%{top: 0; left: 300px; background-color: orangered;}
+            50%{top: 200px; left: 300px; background-color: green;}
+            75%{top: 200px; left: 0; background-color: blue;}
+            100%{top: 0; left: 0; background-color: aqua;}
+
+        }
+    </style>
+</head>
+<body>
+       <div>
+
+       </div>
+</body>
+</html>

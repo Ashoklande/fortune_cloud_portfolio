@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate animation</title>
+</head>
+
+        <style>
+            div{
+                background-color: aqua;
+                width: 300px;
+                height: 300px;
+                animation: rotateanimation 3s infinite;
+            }
+            @keyframes rotateanimation {
+                0%{transform: rotate(25deg);}
+                25%{transform: rotate(90deg);}
+                50%{transform: rotate(200deg);}
+                75%{transform: rotate(280deg);}
+                100%{transform: rotate(360deg);}
+            }
+        </style>
+<body>
+         <div>
+
+         </div>
+</body>
+</html>

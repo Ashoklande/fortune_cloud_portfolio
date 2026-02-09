@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap + form </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<style>
+    nav article a{
+        text-decoration: none;
+        color: wheat;
+        font-weight: 600;
+        font-family: sans-serif;
+    }
+    nav article a:hover{
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+       <!-- navbar  -->
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <article class="container-fluid">
+                <a href="">Home</a>
+                <a href="">About</a> 
+                <a href="">Gallery</a>
+                <a href="">Contact</a>
+                <a href="">Login</a>
+            </article>
+        </nav>
+
+          <!-- carousel slider using bootstrap  -->
+
+          <section id="cr" style="width: 100%; height: 500px; " class="carousel slide" data-bs-ride="carousel">
+            
+              <div class="carousel-inner">
+                <figure class="carousel-item active"><img style="height: 100%; width: 100%;" src="./image.png" alt="">
+                <div class="carousel-caption text-success">
+                   <h1> Virat Kohli</h1>
+                </div>
+                </figure>
+                <figure class="carousel-item"><img style="height: 100%; width: 100%;" src="./virat1.webp" alt=""></figure>
+                <figure class="carousel-item"><img style="height: 100%; width: 100%;" src="./virat2.webp" alt=""></figure>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#cr" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" data-bs-target="#cr" data-bs-slide="next"> <span class="carousel-control-next-icon"></span></button>
+          </section>
+
+        <!-- form in bootstrap  -->
+            <div>
+                <label class="form-label" for="">Name : </label>
+                <input class="form-control-sm" type="text">
+            </div>
+            <div>
+                <label class="form-label" for="">Password : </label>
+                <input class="form-control-sm" type="password">
+            </div>
+            <button class="btn  btn-outline-primary">Submit</button>
+
+
+            <!-- closing alert  -->
+
+            <div class="alert alert-danger alert-dismissible mt-4">
+                <b>It's Harmful to your device.</b>
+                <button class="btn-close " data-bs-dismiss="alert"></button>
+            </div>
+
+            <!-- img using bootstrap  -->
+
+            <img src="./image.png" class="rounded " height="400px" width="400px" alt="INdian flag">
+            <img src="./image.png" class="rounded-circle" height="400px" width="400px" alt="INdian flag">
+            <img src="./image.png" class="img-thumbnail" height="400px" width="400px" alt="INdian flag">
+            <img src="./image.png" class="img-fluid" alt="INdian flag">
+
+            
+            <div class="progress mt-12">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
+            </div>
+</body>
+</html>

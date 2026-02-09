@@ -1,0 +1,34 @@
+
+/* pseudo class selector */
+
+/* button:hover{
+    background-color: red;
+}
+
+a:link{
+    color: blue;
+} */
+
+/* first child */
+
+/* p:first-child{
+    color: green;
+}
+
+p:first-of-type{
+    color: red;
+}
+
+
+
+P:last-child{
+    color: blue;
+}
+
+P:last-of-type{
+  color:orange
+} */
+
+p:nth-child(3) {
+    color: red;
+}

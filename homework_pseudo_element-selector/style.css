@@ -1,0 +1,29 @@
+
+
+/* pseudo element selector */
+
+h1::before {
+    content: " * ";
+    color: red;
+}
+h1::after{
+    content:" * ";
+    color:red;
+}
+
+h1::selection{
+    color: white;
+    background-color: black;
+}
+
+li::marker{
+    color:orange;
+    font-size: 40px;
+}
+
+p::first-letter{
+    color: red;
+}
+p::first-line{
+    background-color: aqua;
+}

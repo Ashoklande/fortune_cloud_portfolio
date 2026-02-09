@@ -1,0 +1,26 @@
+/* combinator selector */
+
+
+/* Desecendent combinator selector */
+
+/* div p{
+    color: red;
+} */
+
+/* child Combinator selector */
+
+/* div>P {
+    font-size: 46px;
+} */
+
+/* Adjscent Sbiling Combinator selector */
+
+/* div + p{
+    color: green;
+} */
+
+/* geeneral sibling combinator selector */
+
+div~p{
+    color: green;
+}

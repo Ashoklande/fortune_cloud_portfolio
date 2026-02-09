@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+     font-family: "Roboto", sans-serif;
+}
+header{
+    width: 100%;
+    height: 20vh;
+}
+header h3 {
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: rgb(236, 69, 8);
+    text-decoration:underline;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header>div:first-child{
+    margin-left: 40px;
+}
+header>div:last-child{
+    margin-right: 80px;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    color: gray;
+    font-size:large;
+    margin-right: 30px;
+     border: 1px solid white;
+}
+.nav-menu a:hover{
+    border: 1px solid black;
+    color: coral;
+    
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;  
+    justify-content: space-around; 
+
+}
+main div{
+    text-align: start;
+}
+
+.image-container{
+    max-width: 400px;
+    max-height: 300px;
+
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 70px coral;
+    background-color: coral;
+    animation: imageanimation 3s infinite alternate;
+}
+
+p strong {
+    font-weight: 700;
+    font-size: 80px;
+}
+
+h1{
+     font-weight: 900;
+    word-spacing: 2px;
+    
+}
+
+h1 span{
+    color: rgb(205, 78, 32);
+}
+.main-paragraph{
+    max-width: 500px;
+    word-spacing: 2px;
+    line-height: 25px;
+    
+}
+
+button{
+    border: none;
+    padding: 5px 25px;
+    border: 2px coral solid;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 10px gray;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    box-sizing: content-box;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    border: 2px coral solid;
+    background-color: rgb(229, 143, 111);
+    transform: scale(1.1);
+}
+
+.home-line{
+    max-width: 900px;
+    margin: auto;
+}
+/* About me secrion  */
+
+.outer-about{
+ min-height: 500px;
+ width: 100%;
+
+}
+.About-me-section{
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+
+
+.heading h2{
+    font-size: 150px;
+    color: rgb(207, 83, 37);
+    text-shadow : 25px 40px 40px coral;;
+}
+.About-me-section .content{
+    max-width: 500px;
+}
+.content p{
+   padding: 40px;
+   line-height: 25px;
+   word-spacing: 5px;
+}
+
+.line{
+    width: 5px;
+    height: 400px;
+    background-color: coral;
+}
+
+
+/* qualification section  */ 
+.qualification-section{
+    width: 100%;
+    
+}
+.heading-qualification{
+    text-align: center;
+   font-size: 40px;
+   color: rgb(227, 97, 50);
+} 
+
+/* qualification content  */
+
+.Qualification-container{
+    
+}
+
+.std{
+    margin: 0 auto;
+    border-radius: 100px;
+    margin-top: 10px;
+    padding: 5px 0px;
+    text-align: center;
+    line-height: 10px;
+    max-width: 900px;
+    background-color: rgb(216, 158, 136);
+}
+.std:hover{
+    background-color: rgb(171, 146, 137);
+}
+
+.std p{
+    color: rgb(60, 57, 57);
+    font-weight: 700;
+    
+}
+.school-name{
+   
+
+}
+
+.std p span{
+    color: rgb(164, 41, 41);
+}
+
+/* responsive content  */
+
+@media (max-width:777px) {
+    .image-container{
+        max-height: 250px;
+        
+    }
+    .image-container img{
+        padding: 0;
+        border-radius: 20%;
+        box-shadow: 20px 20px 70px coral;
+    }
+    main{
+        
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    p strong{
+        font-size: 50px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .main-paragraph{
+        max-width: 260px;
+    }
+
+    .About-me-section{
+        flex-direction: column;
+    }
+    .line{
+        height: 5px;
+        width: 300px;
+    }
+    .heading h2{
+        font-size: 40px;
+    }
+
+}
+
+
+/* animation code  */
+@keyframes imageanimation {
+    from { transform: scale(1.1); }
+    to   { transform: scale(1); }
+}

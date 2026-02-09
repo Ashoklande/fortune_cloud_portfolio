@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static website project.</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <style>
+          
+            .backgroung-img{
+                height: 100vh;
+                width: 100%;
+                background: 
+                        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url("./backgroung.png");
+                        color: white;
+            }
+            nav{
+                width: 100%;
+
+            }
+            nav div span{
+                font-size: 30px;
+                margin-top: 2px;
+                font-weight: 800;
+                color: red;
+                font-family: sans-serif;
+            }
+
+             nav div:first-child {
+            display: inline;
+            }
+            nav > div:last-child {
+            float: right;
+            padding-top: 40px;
+            padding-right: 100px;
+            }
+
+             input::placeholder {
+                color:  white !important;     
+                }
+
+  </style>
+  <body>
+    
+    
+
+
+    <!-- backgroung img  -->
+
+        <div class="backgroung-img">
+            <!-- this is navbar section  -->
+            <nav >
+            <div>
+                <img height="100px" width="100px" src="./main_logo.png" alt="" /><span>ETFLEX</span>
+            </div>
+            <div >
+                <button class="btn rounded btn-outline-light">English</button>
+                <button class="btn rounded btn-danger text-light ">Sign In</button>
+            </div>
+            </nav>
+
+            <div class="d-flex justify-content-center align-items-center mt-5 flex-column">
+                <h1 class="display-3 fw-bold">Unlimited movies, <br> shows, and more</h1>
+                <p class="fs-5 fw-semibold">Starts at ₹149. Cancel at any time.</p>
+                <div class="mt-4">
+                    <p class="fs-6 fw-semibold">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="d-flex gap-2" style="max-width: 700px;">
+                        <input placeholder="Email address" class="form-control flex-grow-1 bg-transparent  text-light" type="text" >
+                        <button style="width:300px;" class="btn btn-danger p-2 fw-semibold fs-4">Get Started ></button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <!-- second section slider -->
+         <div class="bg-dark " style="padding-left: 200px; padding-top: 20px; padding-right: 200px;">
+            <h3 class="fw-bold text-light">Trending Now</h3>
+            <!-- outer div for padding  -->
+             
+                <section id="cr" style="padding-left: 200px; padding-right: 200px;" class="carousel slide" data-bs-ride="carousel">
+            
+              <div class="carousel-inner">
+                  
+                <figure class="carousel-item active">
+                    <div class="d-flex gap-3 ">
+                        <img class="rounded" src="./poster/poster3.png" alt="">   
+                        <img class="rounded" src="./poster/poster1.png" alt="">
+                        <img class="rounded" src="./poster/poster2.png" alt="">
+                    </div>
+               </figure>
+                <figure class="carousel-item  ">
+                        <div class="d-flex gap-3">
+                        <img class="rounded" src="./poster/poster4.png" alt="">   
+                        <img class="rounded" src="./poster/poster5.png" alt="">
+                        <img class="rounded" src="./poster/poster6.png" alt="">
+                        </div>
+               </figure>
+                <figure class="carousel-item ">
+                       <div class=" d-flex gap-3">
+                         <img class="rounded" src="./poster/image.png" alt="">   
+                        <img class="rounded" src="./poster/poster2.png" alt="">
+                        <img class="rounded" src="./poster/poster6.png" alt="">
+                       </div>
+               </figure>
+
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#cr" data-bs-slide="prev"> <span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" data-bs-target="#cr" data-bs-slide="next"> <span class="carousel-control-next-icon"></span></button>
+            </section>
+             w
+         </div>
+  </body>
+</html>
