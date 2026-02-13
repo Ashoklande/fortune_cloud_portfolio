@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
 body{
      font-family: "Roboto", sans-serif;
 }
 header{
     width: 100%;
-    height: 20vh;
+    box-sizing: border-box;
+    padding: 15px 2px;
+    border-bottom: 1px solid rgb(199, 196, 196);
+    position:fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
 }
 header h3 {
     letter-spacing: 4px;
@@ -26,24 +37,25 @@ header>div:last-child{
 
 .nav-menu a{
     text-decoration: none;
+    cursor: pointer;
     color: gray;
     font-size:large;
-    margin-right: 30px;
-     border: 1px solid white;
+    margin-right: 15px;
 }
 .nav-menu a:hover{
     border: 1px solid black;
-    color: coral;
+    color: rgb(199, 144, 124);
     
 }
 main{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;  
     justify-content: space-around; 
 
 }
+
 main div{
     text-align: start;
 }
@@ -64,20 +76,24 @@ main div{
 }
 
 p strong {
+    margin-top: 2px;
     font-weight: 700;
     font-size: 80px;
 }
 
 h1{
+    margin-top: 12px;
      font-weight: 900;
     word-spacing: 2px;
     
 }
 
 h1 span{
+    margin-top: 12px;
     color: rgb(205, 78, 32);
 }
 .main-paragraph{
+    margin-top: 12px;
     max-width: 500px;
     word-spacing: 2px;
     line-height: 25px;
@@ -85,6 +101,7 @@ h1 span{
 }
 
 button{
+    margin-top: 12px;
     border: none;
     padding: 5px 25px;
     border: 2px coral solid;
@@ -110,7 +127,8 @@ button:hover{
 /* About me secrion  */
 
 .outer-about{
- min-height: 500px;
+margin-top: 30px;
+ min-height: 450px;
  width: 100%;
 
 }
@@ -122,7 +140,6 @@ button:hover{
     
 }
 
-
 .heading h2{
     font-size: 150px;
     color: rgb(207, 83, 37);
@@ -132,9 +149,9 @@ button:hover{
     max-width: 500px;
 }
 .content p{
-   padding: 40px;
-   line-height: 25px;
-   word-spacing: 5px;
+   font-size: 20px;
+   line-height: 29px;
+   word-spacing: 3px;
 }
 
 .line{
@@ -147,7 +164,7 @@ button:hover{
 /* qualification section  */ 
 .qualification-section{
     width: 100%;
-    
+    margin-top: 20px;
 }
 .heading-qualification{
     text-align: center;
@@ -157,48 +174,71 @@ button:hover{
 
 /* qualification content  */
 
-.qualification-section{
+.Qualification-container{
     padding-bottom: 90px;
+    margin-top: 30px;
 }
 
 .std{
     margin: 0 auto;
     border-radius: 100px;
     margin-top: 10px;
-    padding: 5px 0px;
+    padding: 7px 5px;
     text-align: center;
-    line-height: 10px;
     max-width: 900px;
-    background-color: rgb(216, 158, 136);
+    background-color: rgb(209, 182, 171);
+}
+.std i{
+   
+    font-size: 30px;
+    color: rgb(179, 68, 28);
+}
+.std .th{
+     margin-top: 5px;
+    color: gray;
+    font-weight: 500;
+
 }
 .std:hover{
-    background-color: rgb(171, 146, 137);
+   border: 2px rgb(151, 51, 15) solid;
 }
-
+.mark{
+    margin-top: 15px;
+}
 .std p{
-    color: rgb(60, 57, 57);
+     margin-top: 5px;
+    color: #481b0a;
     font-weight: 700;
     
 }
 .school-name{
-   
-
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
 }
 
 .std p span{
     color: rgb(164, 41, 41);
+    display: inline-block;
+    background-color: antiquewhite;
+    padding: 3px 6px;
+    border-radius: 15px;
 }
+
 
 /* project section */
 
 .project-section{
    width: 100%; 
+   margin-top: 20px;
 }
 /* 
 .outer-div-project{
     
 } */
-
+.project-section h3{
+    margin-bottom: 23px;
+}
 .project-containter {
     max-width: 90%;
     padding: 50px 10px;
@@ -214,6 +254,7 @@ button:hover{
     background-color: rgb(219, 133, 67);
     border-radius: 30px;
     text-align: center;
+    cursor: pointer;
     padding: 10px;
     height: 300px;
     width: 400px;
@@ -235,6 +276,8 @@ button:hover{
  /* Dark overlay effect */
 .project-item::after{
     content: "";
+    pointer-events: none;
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -259,16 +302,19 @@ button:hover{
      transition: 0.4s ease;
  }
  .project-item h3{
+    margin-top: 7px;
     color: rgb(97, 86, 86);
  }
 
 
  /* connect with me section  */
-
+.connect-section{
+    margin-top: 25px;
+}
  .connect-content{
     max-width: 600px;
-    margin: 0 auto;
-    padding: 5px;
+    margin: auto;
+    padding: 5px 25px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -310,29 +356,37 @@ button:hover{
 
 /* footer section  */
 footer{
+        background-color:#481b0a;
+}
+.footer-div{
+
     text-align: center;
     max-width: 300px;
-    margin: auto;
+    margin: auto ;
 }
-footer div{
 
-}
 footer div h4{
+    margin-top: 5px;
     color: gray;
 }
 footer div i{
-    margin-left: 15px;
+    margin-top: 10px;
     cursor: pointer;
     font-size: 26px ;
 
 }
 .fa-instagram{
+    
     color: rgb(228, 13, 13);
 }
 .fa-facebook{
+    
+    margin-left: 15px;
     color: rgb(96, 96, 199);
 }
 .fa-linkedin{
+    
+    margin-left: 15px;
     color: rgb(76, 76, 220);
 }
 
@@ -340,6 +394,7 @@ footer div i:hover{
     transform: scale(1.2);
 }
 footer p{
+    margin-top: 15px;
     color: gray;
 }
 footer p span{
@@ -351,6 +406,9 @@ footer p span{
 /* responsive content  */
 
 @media (max-width:777px) {
+    .nav-menu{
+        display: none;
+    }
     .image-container{
         max-height: 250px;
         
@@ -379,6 +437,10 @@ footer p span{
 
     .About-me-section{
         flex-direction: column;
+        gap: 20px;
+    }
+    .content p{
+        font-size: 17px;
     }
     .line{
         height: 5px;
@@ -396,6 +458,7 @@ footer p span{
     }
     .project-containter{
         flex-direction: column;
+        gap: 25px;
     }
     .project-containter{
        padding: 0px; 
@@ -403,6 +466,9 @@ footer p span{
     .project-item{
         height: 200px;
         width: 300px;
+    }
+    .project-item1{
+        display: none;
     }
     
 }

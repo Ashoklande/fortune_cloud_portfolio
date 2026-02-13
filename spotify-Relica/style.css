@@ -1,0 +1,117 @@
+
+/* header section css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color:white;
+}
+header{
+    width: 100%;
+    margin: 10px 5px;
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+header .icon-container{
+    max-width: 500px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-spotify{
+    cursor: pointer;
+    font-size:xx-large;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    
+}
+    .fa-house{
+        cursor: pointer;
+        padding:  10px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        font-size:x-large;
+        background-color: #1f1f1f;
+    }
+.fa-house:hover{
+    background: #393838;
+    
+}
+
+.search-container:focus-within{
+    outline: 2px solid white;
+}
+
+.search-container{
+    display: flex;
+    flex: 2;
+    max-width: 600px;
+    background-color: #1f1f1f;
+    align-items: center;
+    padding: 0 7px;
+    
+    border-radius: 25px;
+}
+.search-container input{
+    outline: none;
+    border: none;
+    flex: 1;
+    color: white;
+    margin-left: 20px;
+    background-color: transparent;
+    font-size: large;
+}
+
+.search-container i{
+    font-size:large;
+    color: rgb(190, 173, 173);
+}
+
+/* artatist section  */
+
+main{
+    width: 100%;
+}
+.upper-container{
+    width: 70%;
+    margin: auto;
+}
+.upper-container h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+}
+.conatiner-Artatist{
+    width: 70%;
+    display: flex;
+    gap: 10px;
+}
+.poster-item{
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+.poster-item:hover{
+        background-color: #393838;
+        cursor: pointer;
+}
+.poster{
+    width: 170px;
+    height: 200px;
+    
+}
+
+.poster img{
+    height: 100%;
+    width: 100%;
+
+}
