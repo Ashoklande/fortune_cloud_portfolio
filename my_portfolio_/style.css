@@ -1,72 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
+}
 
+body {
+    font-family: "Roboto", sans-serif;
 }
-body{
-     font-family: "Roboto", sans-serif;
-}
-header{
+
+header {
     width: 100%;
     box-sizing: border-box;
-    padding: 15px 2px;
+    padding: 18px 40px;
     border-bottom: 1px solid rgb(199, 196, 196);
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     transition: top 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 100;
 }
+
 header h3 {
     letter-spacing: 4px;
     font-size: 25px;
     color: rgb(236, 69, 8);
-    text-decoration:underline;
-}
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-header>div:first-child{
-    margin-left: 40px;
-}
-header>div:last-child{
-    margin-right: 80px;
+    text-decoration: underline;
 }
 
-.nav-menu a{
+header > div:first-child { margin-left: 0; }
+header > div:last-child  { margin-right: 0; }
+
+.nav-menu a {
     text-decoration: none;
     cursor: pointer;
     color: gray;
-    font-size:large;
-    margin-right: 15px;
+    font-size: large;
+    margin-right: 20px;
+    padding: 4px 8px;
 }
-.nav-menu a:hover{
+.nav-menu a:last-child { margin-right: 0; }
+.nav-menu a:hover {
     border: 1px solid black;
     color: rgb(199, 144, 124);
-    
 }
-main{
+
+main {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;  
-    justify-content: space-around; 
-
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 60px 40px;
+    box-sizing: border-box;
 }
 
-main div{
-    text-align: start;
-}
+main div { text-align: start; }
 
-.image-container{
+.image-container {
     max-width: 400px;
     max-height: 300px;
-
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -81,29 +81,28 @@ p strong {
     font-size: 80px;
 }
 
-h1{
-    margin-top: 12px;
-     font-weight: 900;
+h1 {
+    margin-top: 14px;
+    font-weight: 900;
     word-spacing: 2px;
-    
 }
 
-h1 span{
+h1 span {
     margin-top: 12px;
     color: rgb(205, 78, 32);
 }
-.main-paragraph{
-    margin-top: 12px;
+
+.main-paragraph {
+    margin-top: 16px;
     max-width: 500px;
     word-spacing: 2px;
     line-height: 25px;
-    
 }
 
-button{
-    margin-top: 12px;
+button {
+    margin-top: 24px;
     border: none;
-    padding: 5px 25px;
+    padding: 8px 32px;
     border: 2px coral solid;
     background-color: whitesmoke;
     box-shadow: 4px 4px 10px gray;
@@ -114,154 +113,257 @@ button{
     cursor: pointer;
     border-radius: 5px;
 }
-button:hover{
+
+button:hover {
     border: 2px coral solid;
     background-color: rgb(229, 143, 111);
     transform: scale(1.1);
 }
 
-.home-line{
+.home-line {
     max-width: 900px;
     margin: auto;
 }
-/* About me secrion  */
 
-.outer-about{
-margin-top: 30px;
- min-height: 450px;
- width: 100%;
-
+/* ── About section ── */
+.outer-about {
+    margin-top: 0;
+    padding: 60px 0;
+    min-height: 450px;
+    width: 100%;
 }
-.About-me-section{
-    padding: 0 50px;
+
+.About-me-section {
+    padding: 0 60px;
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
-    
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
-.heading h2{
+.heading h2 {
     font-size: 150px;
     color: rgb(207, 83, 37);
-    text-shadow : 25px 40px 40px coral;;
-}
-.About-me-section .content{
-    max-width: 500px;
-}
-.content p{
-   font-size: 20px;
-   line-height: 29px;
-   word-spacing: 3px;
+    text-shadow: 25px 40px 40px coral;
 }
 
-.line{
+.About-me-section .content { max-width: 500px; }
+
+.content p {
+    font-size: 20px;
+    line-height: 32px;
+    word-spacing: 3px;
+}
+
+.line {
     width: 5px;
     height: 400px;
     background-color: coral;
+    flex-shrink: 0;
 }
 
-
-/* qualification section  */ 
-.qualification-section{
+/* ── Skills & Tools section ── */
+.skills-section {
     width: 100%;
+    padding: 60px 0 70px;
+}
+
+.skills-wrapper {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: center;
+}
+
+.skills-block {
+    flex: 1;
+    padding: 10px 30px 20px;
+}
+
+.skills-block-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed coral;
+}
+
+.skills-block-header i {
+    font-size: 22px;
+    color: coral;
+}
+
+.skills-block-header span {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(207, 83, 37);
+    letter-spacing: 1px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Skill badge pill */
+.skill-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    background-color: rgb(209, 182, 171);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #481b0a;
+    cursor: default;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.skill-badge i {
+    font-size: 17px;
+    color: rgb(179, 68, 28);
+}
+
+.skill-badge:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: coral;
+    color: white;
+    box-shadow: 4px 6px 16px rgba(205, 78, 32, 0.35);
+}
+
+.skill-badge:hover i {
+    color: white;
+}
+
+/* Tool badges slightly different shade */
+.tool-badge {
+    background-color: rgb(195, 165, 153);
+}
+
+.tool-badge:hover {
+    background-color: rgb(207, 83, 37);
+}
+
+/* Vertical divider between skills & tools */
+.skills-divider {
+    width: 4px;
+    align-self: stretch;
+    min-height: 200px;
+    background: linear-gradient(to bottom, transparent, coral, transparent);
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin: 10px 0;
+}
+
+/* ── Qualification section ── */
+.qualification-section {
+    width: 100%;
+    padding: 50px 0 70px;
+    margin-top: 0;
+}
+
+.heading-qualification {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(227, 97, 50);
+    margin-bottom: 10px;
+}
+
+.Qualification-container {
+    padding: 20px 20px 60px;
     margin-top: 20px;
 }
-.heading-qualification{
-    text-align: center;
-   font-size: 40px;
-   color: rgb(227, 97, 50);
-} 
 
-/* qualification content  */
-
-.Qualification-container{
-    padding-bottom: 90px;
-    margin-top: 30px;
-}
-
-.std{
+.std {
     margin: 0 auto;
     border-radius: 100px;
-    margin-top: 10px;
-    padding: 7px 5px;
+    margin-top: 16px;
+    padding: 18px 24px;
     text-align: center;
     max-width: 900px;
     background-color: rgb(209, 182, 171);
 }
-.std i{
-   
+
+.std i {
     font-size: 30px;
     color: rgb(179, 68, 28);
+    margin-bottom: 6px;
 }
-.std .th{
-     margin-top: 5px;
+
+.std .th {
+    margin-top: 8px;
     color: gray;
     font-weight: 500;
+}
 
+.mark {
+    margin-top: 12px;
+    padding-bottom: 4px;
 }
-.std:hover{
-   border: 2px rgb(151, 51, 15) solid;
-}
-.mark{
-    margin-top: 15px;
-}
-.std p{
-     margin-top: 5px;
+
+.std p {
+    margin-top: 7px;
     color: #481b0a;
     font-weight: 700;
-    
 }
-.school-name{
-    margin-top: 5px;
+
+.school-name {
+    margin-top: 7px;
     color: white;
     font-size: 20px;
 }
 
-.std p span{
+.std p span {
     color: rgb(164, 41, 41);
     display: inline-block;
     background-color: antiquewhite;
-    padding: 3px 6px;
+    padding: 3px 10px;
     border-radius: 15px;
 }
 
-
-/* project section */
-
-.project-section{
-   width: 100%; 
-   margin-top: 20px;
+.std:hover {
+    border: 2px rgb(151, 51, 15) solid;
 }
-/* 
-.outer-div-project{
-    
-} */
-.project-section h3{
-    margin-bottom: 23px;
+
+/* ── Project section ── */
+.project-section {
+    width: 100%;
+    padding: 50px 0 60px;
+    margin-top: 0;
 }
+
+.project-section h3 { margin-bottom: 10px; }
+
 .project-containter {
     max-width: 90%;
-    padding: 50px 10px;
+    padding: 40px 30px;
     background-color: bisque;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     display: flex;
-    margin: 0 auto;
+    margin: 20px auto 0;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
+}
 
- }
- .project-item{
+.project-item {
     background-color: rgb(219, 133, 67);
     border-radius: 30px;
     text-align: center;
     cursor: pointer;
-    padding: 10px;
+    padding: 12px;
     height: 300px;
     width: 400px;
     position: relative;
- }
- /* Hide text initially */
-.project-open-text{
+}
+
+.project-open-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -273,208 +375,217 @@ margin-top: 30px;
     transition: 0.4s ease;
     z-index: 2;
 }
- /* Dark overlay effect */
-.project-item::after{
+
+.project-item::after {
     content: "";
     pointer-events: none;
-    
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     transition: 0.4s ease;
-}
-/* Hover Effect */
-.project-item:hover::after{
-    opacity: 1;
+    border-radius: 30px;
 }
 
-.project-item:hover .project-open-text{
-    opacity: 1;
+.project-item:hover::after    { opacity: 1; }
+.project-item:hover .project-open-text { opacity: 1; }
+
+.project-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: 0.4s ease;
 }
- .project-item img{
-     height: 100%;
-     width: 100%;
-     object-fit: contain;
-     transition: 0.4s ease;
- }
- .project-item h3{
-    margin-top: 7px;
+
+.project-item h3 {
+    margin-top: 10px;
     color: rgb(97, 86, 86);
- }
-
-
- /* connect with me section  */
-.connect-section{
-    margin-top: 25px;
 }
- .connect-content{
+
+/* ── Connect section ── */
+.connect-section {
+    padding: 50px 20px 60px;
+    margin-top: 0;
+}
+
+.connect-content {
     max-width: 600px;
-    margin: auto;
-    padding: 5px 25px;
+    margin: 20px auto 0;
+    padding: 10px 30px 30px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
- }
- .connect-content .text{
-    line-height: 25px;
-    letter-spacing: 2px;
-    word-spacing: 5px;
- }
-.connection-input{
-    display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
-.connection-input input{
-    padding: 5px 7px;
-    font-size:small;
+.connect-content .text {
+    line-height: 27px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.connection-input {
+    display: flex;
+    gap: 14px;
+}
+
+.connection-input input {
+    padding: 10px 12px;
+    font-size: small;
     border-radius: 5px;
     border: 2px coral solid;
     background: transparent;
     font-weight: 700;
     color: rgb(48, 42, 42);
-    outline: none; 
+    outline: none;
     flex: 1;
 }
 
-.text-area-message{
+.text-area-message {
     width: 100%;
-    padding: 5px 7px;
-    font-size:small;
+    padding: 10px 12px;
+    font-size: small;
     font-weight: 700;
     border: 2px coral solid;
     border-radius: 5px;
     background: transparent;
     color: rgb(42, 39, 39);
-    margin-right: 15px;
-    outline: none; 
+    outline: none;
+    box-sizing: border-box;
 }
 
-/* footer section  */
-footer{
-        background-color:#481b0a;
-}
-.footer-div{
+/* ── Footer ── */
+footer { background-color: #481b0a; }
 
+.footer-div {
     text-align: center;
     max-width: 300px;
-    margin: auto ;
+    margin: auto;
+    padding: 30px 20px;
 }
 
-footer div h4{
-    margin-top: 5px;
+footer div h4 {
+    margin-top: 0;
+    margin-bottom: 14px;
     color: gray;
 }
-footer div i{
-    margin-top: 10px;
+
+footer div i {
+    margin-top: 0;
     cursor: pointer;
-    font-size: 26px ;
-
-}
-.fa-instagram{
-    
-    color: rgb(228, 13, 13);
-}
-.fa-facebook{
-    
-    margin-left: 15px;
-    color: rgb(96, 96, 199);
-}
-.fa-linkedin{
-    
-    margin-left: 15px;
-    color: rgb(76, 76, 220);
+    font-size: 26px;
 }
 
-footer div i:hover{
-    transform: scale(1.2);
-}
-footer p{
-    margin-top: 15px;
+.fa-instagram { color: rgb(228, 13, 13); }
+.fa-facebook  { margin-left: 18px; color: rgb(96, 96, 199); }
+.fa-linkedin  { margin-left: 18px; color: rgb(76, 76, 220); }
+
+footer div i:hover { transform: scale(1.2); }
+
+footer p {
+    margin-top: 20px;
     color: gray;
 }
-footer p span{
+
+footer p span {
     color: rgb(78, 78, 133);
     text-decoration: underline;
     cursor: pointer;
-    
 }
-/* responsive content  */
 
-@media (max-width:777px) {
-    .nav-menu{
-        display: none;
-    }
-    .image-container{
-        max-height: 250px;
-        
-    }
-    .image-container img{
+/* ── Responsive ── */
+@media (max-width: 777px) {
+    .nav-menu { display: none; }
+
+    header { padding: 14px 20px; }
+
+    .image-container { max-height: 250px; }
+    .image-container img {
         padding: 0;
         border-radius: 20%;
         box-shadow: 20px 20px 70px coral;
     }
-    main{
-        
-        padding-top: 20px;
+
+    main {
+        padding: 80px 20px 40px;
         flex-direction: column;
         justify-content: center;
         gap: 30px;
-    }
-    p strong{
-        font-size: 50px;
-    }
-    h1{
-        font-size: 30px;
-    }
-    .main-paragraph{
-        max-width: 260px;
+        height: auto;
+        min-height: 100vh;
     }
 
-    .About-me-section{
+    p strong  { font-size: 50px; }
+    h1        { font-size: 30px; }
+    .main-paragraph { max-width: 100%; }
+
+    .outer-about { padding: 40px 0; }
+
+    .About-me-section {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 20px;
+    }
+
+    .content p { font-size: 17px; }
+
+    .line { height: 5px; width: 300px; }
+
+    .heading h2 { font-size: 40px; }
+
+    /* Skills responsive */
+    .skills-section { padding: 40px 0 50px; }
+
+    .skills-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 0 16px;
+    }
+
+    .skills-block { padding: 10px 10px 16px; }
+
+    .skills-divider {
+        width: 100%;
+        min-height: 4px;
+        height: 4px;
+        background: linear-gradient(to right, transparent, coral, transparent);
+        margin: 4px 0;
+        align-self: auto;
+    }
+
+    .skills-grid { gap: 9px; }
+
+    .skill-badge {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    .std {
+        border-radius: 10px;
+        padding: 14px 16px;
+    }
+
+    .Qualification-container { padding: 10px 15px 40px; }
+
+    .project-section { padding: 40px 0 50px; }
+
+    .project-containter {
         flex-direction: column;
         gap: 20px;
+        padding: 20px 16px;
+        max-width: 100%;
     }
-    .content p{
-        font-size: 17px;
-    }
-    .line{
-        height: 5px;
-        width: 300px;
-    }
-    .heading h2{
-        font-size: 40px;
-    }
-    .std{
-        border-radius: 10px;
-        
-    }
-    .Qualification-container{
-        padding: 0 15px;
-    }
-    .project-containter{
-        flex-direction: column;
-        gap: 25px;
-    }
-    .project-containter{
-       padding: 0px; 
-    }
-    .project-item{
-        height: 200px;
-        width: 300px;
-    }
-    .project-item1{
-        display: none;
-    }
-    
+
+    .project-item  { height: 200px; width: 300px; }
+    .project-item1 { display: none; }
+
+    .connect-section { padding: 40px 16px 50px; }
+    .connect-content { padding: 10px 0 20px; }
+    .footer-div      { padding: 24px 20px; }
 }
 
-
-/* animation code  */
+/* ── Animation ── */
 @keyframes imageanimation {
     from { transform: scale(1.1); }
     to   { transform: scale(1); }

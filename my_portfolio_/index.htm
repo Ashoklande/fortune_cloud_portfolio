@@ -6,7 +6,7 @@
     <title>My_Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <header id="me">
@@ -16,22 +16,24 @@
       <div class="nav-menu">
         <a data-target="me">Me</a>
         <a data-target="about">About</a>
-        <a data-target="project">project</a>
+        <a data-target="skills">Skills</a>
+        <a data-target="project">Project</a>
         <a data-target="education">Education</a>
-        <a data-target="contact">contact</a>
+        <a data-target="contact">Contact</a>
       </div>
     </header>
+
     <main>
       <!-- left side photo -->
       <div class="image-container">
-        <img src="./images//my_pic.jpg" alt="my-original-photo" />
+        <img src="./images/my_pic.jpg" alt="my-original-photo" />
       </div>
-      <!-- right side  content -->
+      <!-- right side content -->
       <div class="main-content">
         <p><strong>Hi, 👋</strong></p>
         <h1>I' am <span>Ashok Lande</span></h1>
         <p class="main-paragraph">
-          I'm , a passionate web developer. I specialize in creating intuitive
+          I'm a passionate web developer. I specialize in creating intuitive
           and responsive websites using modern technologies.
         </p>
         <button class="cv-button">CV <i class="fa-solid fa-square-up-right"></i></button>
@@ -39,115 +41,186 @@
     </main>
     <div class="home-line"><hr /></div>
 
-    <!-- About section  -->
+    <!-- About section -->
     <section id="about" class="outer-about">
       <div class="About-me-section">
         <div class="heading">
-          <h2>
-            About, <br />
-            Me
-          </h2>
+          <h2>About, <br />Me</h2>
         </div>
         <div class="line"></div>
         <div class="content">
-          <p >
+          <p>
             I am a B.E. undergraduate in Computer Engineering with a strong foundation in web development and modern programming technologies. I have hands-on experience building responsive and user-friendly web applications using React.js, Node.js, and MongoDB. Through academic projects and practical implementations, I have developed problem-solving skills, logical thinking, and the ability to work effectively in team environments. I am passionate about learning new technologies and continuously improving my technical and professional abilities.
           </p>
         </div>
       </div>
     </section>
     <div class="home-line"><hr /></div>
-    <!-- Education section  -->
+
+    <!-- Skills & Tools section -->
+    <section id="skills" class="skills-section">
+      <h3 class="heading-qualification">Skills &amp; Tools.</h3>
+
+      <div class="skills-wrapper">
+
+        <!-- Skills block -->
+        <div class="skills-block">
+          <div class="skills-block-header">
+            <i class="fa-solid fa-code"></i>
+            <span>Technical Skills</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-badge">
+              <i class="fa-brands fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-server"></i>
+              <span>Express.js</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-react"></i>
+              <span>React.js</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-n"></i>
+              <span>Next.js</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>DSA</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-badge">
+              <i class="fa-brands fa-bootstrap"></i>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="skills-divider"></div>
+
+        <!-- Tools block -->
+        <div class="skills-block">
+          <div class="skills-block-header">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <span>Tools &amp; Platforms</span>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-badge tool-badge">
+              <i class="fa-solid fa-code"></i>
+              <span>VS Code</span>
+            </div>
+            <div class="skill-badge tool-badge">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Postman</span>
+            </div>
+            <div class="skill-badge tool-badge">
+              <i class="fa-brands fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-badge tool-badge">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div class="home-line"><hr /></div>
+
+    <!-- Education section -->
     <section id="education" class="qualification-section">
-      <h3 class="heading-qualification"> Education.</h3>
+      <h3 class="heading-qualification">Education.</h3>
       <div class="Qualification-container">
         <div class="std">
           <i class="fa-solid fa-graduation-cap"></i>
           <p class="th">SSC</p>
           <p class="school-name">Shree Nagesh Vidyalay Jamkhed Ahemadnagar.</p>
-          <p class="mark">87 % <span> 2020 passout</span></p>
+          <p class="mark">87 % <span>2020 passout</span></p>
         </div>
         <div class="std">
           <i class="fa-solid fa-certificate"></i>
-          <p class="th">Diploma(computer)</p>
+          <p class="th">Diploma (Computer)</p>
           <p class="school-name">Jaiwantrio Sawant Polytechnic Hadpsar.</p>
-          <p class="mark">87.31 % <span> 2023 passout</span></p>
+          <p class="mark">87.31 % <span>2023 passout</span></p>
         </div>
         <div class="std">
           <i class="fa-solid fa-graduation-cap"></i>
-          <p class="th">BE pursuing</p>
-          <p class="school-name">
-            JSPM , Imperial collage of engineering & research Wagholi.
-          </p>
-          <p class="mark"><span> 2026 present</span></p>
+          <p class="th">BE Pursuing</p>
+          <p class="school-name">JSPM, Imperial College of Engineering &amp; Research Wagholi.</p>
+          <p class="mark"><span>2026 present</span></p>
         </div>
       </div>
     </section>
-    <!-- project section  -->
+
+    <!-- Project section -->
     <section id="project" class="project-section">
       <h3 class="heading-qualification">My Work.</h3>
-      
-        <div class="project-containter">
-
-            <div  class="project-item project-item1">
-                <p class="project-open-text">Click Here <i class="fa-solid fa-square-up-right"></i></p>
-                <iframe
-                        src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292211373432786946?collapsed=1"
-                        height="301"
-                        width="400"
-                        frameborder="0"
-                        allowfullscreen=""
-                        title="Embedded post"
-                        ></iframe>
-                        <h3>BikeSelling portal</h3>
-            </div>
-            <div class="project-item">
-                <p class="project-open-text">Click Here <i class="fa-solid fa-square-up-right"></i></p>
-                <img 
-                src="./images/myproject2.jpg"
-                alt="">
-                <h3>Skillswap</h3>
-            </div>
-            <div class="project-item project-card3">
-                <p  class="project-open-text ">Click Here <i class="fa-solid fa-square-up-right"></i></p>
-                <img 
-                src="./images/intershiptask.png"
-                alt="">
-                <h3>Intership-project</h3>
-            </div>
-          
+      <div class="project-containter">
+        <div class="project-item project-item1">
+          <p class="project-open-text">Click Here <i class="fa-solid fa-square-up-right"></i></p>
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292211373432786946?collapsed=1"
+            height="301" width="400" frameborder="0" allowfullscreen=""
+            title="Embedded post"></iframe>
+          <h3>BikeSelling Portal</h3>
         </div>
-     
+        <div class="project-item">
+          <p class="project-open-text">Click Here <i class="fa-solid fa-square-up-right"></i></p>
+          <img src="./images/myproject2.jpg" alt="">
+          <h3>Skillswap</h3>
+        </div>
+        <div class="project-item project-card3">
+          <p class="project-open-text">Click Here <i class="fa-solid fa-square-up-right"></i></p>
+          <img src="./images/intershiptask.png" alt="">
+          <h3>Internship-project</h3>
+        </div>
+      </div>
     </section>
-    <!-- connect with me  -->
-     <section id="contact" class="connect-section">
+
+    <!-- Connect with me -->
+    <section id="contact" class="connect-section">
       <h3 class="heading-qualification">Get in Touch.</h3>
       <form id="contact-form" class="connect-content">
-        <p class="text">I'd love to hear from you! If you any questions,comment and feedback,please use form below.</p>
+        <p class="text">I'd love to hear from you! If you have any questions, comments or feedback, please use the form below.</p>
         <div class="connection-input">
           <input required name="name" type="text" placeholder="Enter your name">
           <input required name="email" type="email" placeholder="Enter your email">
         </div>
-        <textarea required class="text-area-message" name="message" rows="4" placeholder="Your Message Here." id=""></textarea>
+        <textarea required class="text-area-message" name="message" rows="4" placeholder="Your Message Here."></textarea>
         <div style="text-align: center;">
           <button type="submit">Send Message</button>
         </div>
       </form>
-     </section>
-     <div class="home-line"><hr /></div>
-     <footer>
-      <div class="footer-div">
-       <div >
-            <h4>Social Media Links.</h3>
-            <i onclick="openinstagram()" class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i onclick="openlinkedin()" class="fa-brands fa-linkedin"></i>
-          </div>
-          <p>&copy; 2026 <span>Ashok Lande</span>. All Rights Reserved.</p>
-      </div>
-     </footer>
-     <script src="./script.js"></script>
-    
+    </section>
+    <div class="home-line"><hr /></div>
 
+    <footer>
+      <div class="footer-div">
+        <div>
+          <h4>Social Media Links.</h4>
+          <i onclick="openinstagram()" class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i onclick="openlinkedin()" class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>&copy; 2026 <span>Ashok Lande</span>. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
