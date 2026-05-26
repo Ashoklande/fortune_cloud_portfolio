@@ -499,26 +499,59 @@ footer p span {
 
     header { padding: 14px 20px; }
 
-    .image-container { max-height: 250px; }
-    .image-container img {
-        padding: 0;
-        border-radius: 20%;
-        box-shadow: 20px 20px 70px coral;
-    }
-
+    /* ── Hero / Main section fix ── */
     main {
-        padding: 80px 20px 40px;
-        flex-direction: column;
+        padding: 90px 20px 40px;
+        flex-direction: column-reverse;   /* text first, image below */
         justify-content: center;
-        gap: 30px;
+        align-items: center;
+        gap: 24px;
         height: auto;
         min-height: 100vh;
     }
 
-    p strong  { font-size: 50px; }
-    h1        { font-size: 30px; }
-    .main-paragraph { max-width: 100%; }
+    main div { text-align: center; }
 
+    .image-container {
+        max-width: 200px;
+        max-height: 200px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 10px 10px 40px coral;
+    }
+
+    .main-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    p strong  { font-size: 40px; }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 8px;
+    }
+
+    .main-paragraph {
+        font-size: 15px;
+        max-width: 100%;
+        margin-top: 12px;
+        line-height: 24px;
+    }
+
+    button {
+        margin-top: 18px;
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    /* ── About ── */
     .outer-about { padding: 40px 0; }
 
     .About-me-section {
@@ -533,7 +566,7 @@ footer p span {
 
     .heading h2 { font-size: 40px; }
 
-    /* Skills responsive */
+    /* ── Skills ── */
     .skills-section { padding: 40px 0 50px; }
 
     .skills-wrapper {
@@ -561,6 +594,7 @@ footer p span {
         font-size: 13px;
     }
 
+    /* ── Education ── */
     .std {
         border-radius: 10px;
         padding: 14px 16px;
@@ -568,6 +602,7 @@ footer p span {
 
     .Qualification-container { padding: 10px 15px 40px; }
 
+    /* ── Projects ── */
     .project-section { padding: 40px 0 50px; }
 
     .project-containter {
@@ -580,9 +615,17 @@ footer p span {
     .project-item  { height: 200px; width: 300px; }
     .project-item1 { display: none; }
 
+    /* ── Contact ── */
     .connect-section { padding: 40px 16px 50px; }
     .connect-content { padding: 10px 0 20px; }
-    .footer-div      { padding: 24px 20px; }
+
+    .connection-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ── Footer ── */
+    .footer-div { padding: 24px 20px; }
 }
 
 /* ── Animation ── */
